@@ -9,8 +9,11 @@ body {
 
 .nav-bar {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 28px;
+    padding: 18px;
+    padding-top: 0px;
+    font-size: 1.3em;
     font-weight: bold;
     text-transform: uppercase;
     background-color: black;
@@ -18,16 +21,16 @@ body {
 }
 
 .left-side {
-    display: flex;
+    display: flex;  
+    align-items: center;
 }
 
 .nav-bar > .left-side > div {
-    margin-right: 60px;
-    font-size: 1.3em;
+    margin-right: 60px;  
 }
 
 .nav-link-bar {
-    height: 22px;
+    height: 24px;
     border-style: none;
 }
 
@@ -35,9 +38,15 @@ body {
     color: white;
     text-decoration: none;
     transition: color 0.5s;
+    margin-left: 20px;
 }
 
 .nav-link-bar a:hover {
     color: #8c8c8c;
+}
+
+.nav-logo-bar img {
+    margin-top: 10px;
+    margin-left: -50px;
 }
 
