@@ -1,3 +1,4 @@
+/* main styles */
 body {
     margin: 0px;
     font-family: helvetica-neue-LT-reg,helvetica neue light,Helvetica,Arial;
@@ -5,14 +6,15 @@ body {
 
 .container {
     display: grid;
+    grid-template-columns: 1fr;
 }
 
+/* navbar styles */
 .nav-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 18px;
-    padding-top: 0px;
+    padding: 8px 8px;
     font-size: 1.3em;
     font-weight: bold;
     text-transform: uppercase;
@@ -38,7 +40,7 @@ body {
     color: white;
     text-decoration: none;
     transition: color 0.5s;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .nav-link-bar a:hover {
@@ -49,4 +51,46 @@ body {
     margin-top: 10px;
     margin-left: -50px;
 }
+
+.nav-bar > .right-side > div {
+    margin-right: 20px;  
+}
+
+/* grid styles */
+
+.issues-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    
+}
+
+.issue-wrapper {
+    position: relative;
+}
+
+.issue-image-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.image-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
+} 
 
