@@ -1,0 +1,142 @@
+/* main styles */
+body {
+    margin: 0px;
+    font-family: helvetica-neue-LT-reg,helvetica neue light,Helvetica;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* navbar styles */
+.nav-bar {
+    display: flex;
+    background: black;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 6px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    left: 0;
+    z-index: 9999;
+}
+
+.left-side {
+    display: flex;  
+    align-items: center;
+}
+
+.nav-bar > .left-side > div {
+    margin-right: 50px;  
+}
+
+.nav-link-bar {
+    height: 24px;
+    border-style: none;
+}
+
+.nav-link-bar a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+    margin-left: 40px;
+}
+
+.nav-link-bar a:hover {
+    color: #8c8c8c;
+}
+
+.nav-bar > .right-side > div {
+    margin-right: 20px; 
+    margin-top: 5px;
+}
+
+.introduction h1 {
+    font-size: 2.0em;
+    color: white;
+    background:url(images/background.jpg) no-repeat left bottom;
+    background-size:100% 100%;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    opacity: 0.7;
+    height: 450px;
+    line-height: 450px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: 1s;
+}
+
+.introduction h1:hover {
+    font-size: 2.5em;
+}
+
+/* grid styles */
+.issues-wrapper { 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    border-top: 30px solid black;
+}
+
+.issue-wrapper {
+    position: relative;
+}
+
+.issue-image-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7; 
+}
+
+.image-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img {
+    width: 40%;
+    margin-bottom: 20px;
+} 
+
+.image-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: bold;
+    color: transparent;
+    text-transform: capitalize;
+}
+
+.image-text-wrapper:hover .subtitle{
+    font-weight: bold;
+    font-size: 1.1em;
+    color: black;
+} 
+
+.img-lighter:hover {
+    transition: 1s;
+    filter: brightness(20%)
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-size: small;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+}
