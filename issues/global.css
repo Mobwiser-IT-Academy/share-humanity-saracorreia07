@@ -5,22 +5,26 @@ body {
 }
 
 .container {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
+}
+
+.img { 
+    max-width: 100%; 
+    height: auto; 
 }
 
 /* navbar styles */
 .nav-bar {
     display: flex;
+    width: 100%; 
     background: black;
     align-items: center;
     justify-content: space-between;
-    padding: 6px 6px;
     font-size: 1.2em;
     font-weight: bold;
     text-transform: uppercase;
-    position: fixed; 
-    width: 100%; 
     top: 0; 
     left: 0;
     z-index: 9999;
@@ -56,20 +60,20 @@ body {
 }
 
 .title h1 {
-    font-size: 2.8em;
+    font-size: 1.4em;
     color: white;
     background-size:100% 100%;
     margin-block-start: 0px;
     margin-block-end: 0px;
-    height: 650px;
-    line-height: 650px;
+    height: 200px;
+    line-height: 200px;
     text-align: center;
     text-transform: uppercase;
     transition: 1s;
 }
 
 .title h1:hover {
-    font-size: 3.2em;
+    font-size: 1.6em;
 }
 
 .introduction {
@@ -82,7 +86,7 @@ body {
 /* navbar styles */
 .issue { 
     display: grid;
-    grid-template-columns: 1fr 1.5fr; 
+    grid-template-columns: 1fr; 
     border-top: 1px solid #595757;
     border-bottom: 1px solid #595757;
     margin-left: 30px;
@@ -102,37 +106,35 @@ body {
 .issue-rank h3, p {
     text-align: center;
     margin-left: 20px;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .issue-image-background {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: -30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
     height: 200px;
-    width: 40%;
+    width: 60%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
 }
 
 .issue-description h2{
-    text-align: left;
+    text-align: center;
     justify-content: space-between;
     height: 100%;
     width: 100%;
     margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .issue-description p {
-    text-align: justify;
+    text-align: center;
 }
 
 .issue-description ul {
     list-style: circle;
-    text-align: justify;
+    text-align: left;
     margin-right: 40px;
 }
 
@@ -141,6 +143,25 @@ body {
     font-size: 1.6em;
     color: white;
     margin-top: 80px;
+}
+
+.event-background {
+    width: 55%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 150px;
+    line-height: 150px; 
+    margin-left: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.event-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: white;
+    text-align: center;
 }
 
 .footer {
@@ -153,22 +174,61 @@ body {
     text-align: center;
 }
 
-.event-background {
-    width: 20%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
-    margin-left: 800px;
-    line-height: 160px;
-    margin-bottom: 40px;
+@media only screen and (min-width: 768px) {
+
+    .title h1 {
+        font-size: 2.5em;
+        background-size:100% 100%;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        height: 450px;
+        line-height: 450px;
+    }
+
+    .title h1:hover {
+        font-size: 3.2em;
+    }
+
+    .issue { 
+        grid-template-columns: 1fr 1.5fr; 
+    }
+
+    .issue-image-background {
+        height: 200px;
+        width: 40%;
+        margin-bottom: 30px;
+    }
+
+    .issue-description h2 { 
+        text-align: left;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .issue-description p {
+        text-align: justify;
+    }
+
+    .issue-description ul {
+        text-align: justify;
+    }
+
+    .event-background {
+        width: 50%;
+        background-size: 240px;
+        background-position: center;
+        background-repeat: no-repeat; 
+        margin-bottom: 40px;
+        margin-left: 600px;
+        line-height: 150px; 
+    }
+
 }
 
-.event-title {
-    font-weight: bold;
-    font-size: 1.4em;
-    color: white;
-    text-align: center;
-}
 
 
 

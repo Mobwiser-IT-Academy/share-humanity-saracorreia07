@@ -5,22 +5,26 @@ body {
 }
 
 .container {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
+}
+
+.img { 
+    max-width: 100%; 
+    height: auto; 
 }
 
 /* navbar styles */
 .nav-bar {
     display: flex;
+    width: 100%; 
     background: black;
     align-items: center;
     justify-content: space-between;
-    padding: 6px 6px;
     font-size: 1.2em;
     font-weight: bold;
     text-transform: uppercase;
-    position: fixed; 
-    width: 100%; 
     top: 0; 
     left: 0;
     z-index: 9999;
@@ -41,6 +45,7 @@ body {
 }
 
 .nav-link-bar a {
+    font-size: 0.6em;
     color: white;
     text-decoration: none;
     transition: color 0.5s;
@@ -56,29 +61,30 @@ body {
     margin-top: 5px;
 }
 
-.introduction h1 {
-    font-size: 2.0em;
+.introduction h1 { 
+    width: 100%;
+    font-size: 0.9em;
     color: white;
-    background:url(images/background.jpg) no-repeat left bottom;
-    background-size:100% 100%;
+    background:url(images/smallbackground.jpg) no-repeat left bottom;
     margin-block-start: 0px;
     margin-block-end: 0px;
     opacity: 0.7;
-    height: 450px;
-    line-height: 450px;
+    height: 150px;
+    line-height: 150px;
     text-align: center;
     text-transform: capitalize;
     transition: 1s;
 }
 
 .introduction h1:hover {
-    font-size: 2.5em;
+    width: 100%;
+    font-size: 1.1em;
 }
 
 /* grid styles */
 .issues-wrapper { 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr; 
     border-top: 30px solid black;
 }
 
@@ -140,3 +146,31 @@ body {
     line-height: 80px;
     text-align: center;
 }
+
+@media only screen and (min-width: 768px) {
+
+    .nav-link-bar a {
+       font-size: 1.0em;
+    }
+
+    .introduction h1 { 
+        font-size: 2.0em;
+        background:url(images/background.jpg) no-repeat left bottom;
+        background-size:100% 100%;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        height: 450px;
+        line-height: 450px;
+    }
+
+    .introduction h1:hover {
+        font-size: 2.5em;
+    }
+
+    .issues-wrapper { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        border-top: 30px solid black;
+    }
+} 
+
