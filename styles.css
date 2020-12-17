@@ -81,11 +81,38 @@ body {
     font-size: 1.1em;
 }
 
+.search {
+    background-color: black;
+}
+
+.search form {
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.search form input {
+    padding: 4px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 8px;
+    border: 1px solid white;
+}
+
+.search form input::placeholder {
+    color: white;
+}
+
+.search form input:hover { 
+    color:white; 
+}
+
 /* grid styles */
 .issues-wrapper { 
     display: grid;
     grid-template-columns: 1fr; 
-    border-top: 30px solid black;
+    border-top: 10px solid black;
 }
 
 .issue-wrapper {
@@ -167,10 +194,24 @@ body {
         font-size: 2.5em;
     }
 
+    .search form {
+        padding-top: 20px;
+        padding-right: 20px;
+    }
+
+    .search form input {
+        padding: 8px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 14px;
+        border: 1px solid white;
+    }
+    
     .issues-wrapper { 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr; 
-        border-top: 30px solid black;
+        border-top: 20px solid black;
     }
 } 
 

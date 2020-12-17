@@ -1,1 +1,5 @@
-console.log("Batata");
+//Selectors
+
+//Event listener
+
+//Functions
