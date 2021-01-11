@@ -80,10 +80,11 @@ body {
     text-align: center;
     padding: 20px 20px;
     font-size: 1.0em;
+    font-weight: bold;
     text-transform: capitalize;
 }
 
-/* navbar styles */
+
 .issue { 
     display: grid;
     grid-template-columns: 1fr; 
@@ -123,7 +124,6 @@ body {
 .issue-description h2{
     text-align: center;
     justify-content: space-between;
-    height: 100%;
     width: 100%;
     margin-top: 40px;
 }
@@ -172,7 +172,7 @@ body {
     height: 80px;
     line-height: 80px;
     text-align: center;
-}
+} 
 
 @media only screen and (min-width: 768px) {
 
@@ -198,15 +198,14 @@ body {
         width: 40%;
         margin-bottom: 30px;
     }
-
+ 
     .issue-description h2 { 
         text-align: left;
         justify-content: space-between;
-        height: 100%;
         width: 100%;
         margin-top: 40px;
         margin-left: 20px;
-        margin-right: 20px;
+        margin-right: 20px; 
     }
 
     .issue-description p {
@@ -225,8 +224,7 @@ body {
         margin-bottom: 40px;
         margin-left: 600px;
         line-height: 150px; 
-    }
-
+    } 
 }
 
 
